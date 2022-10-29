@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Libre-Franklin', sans-serif;
+}
+header {
+  padding: 2.5rem 0 1.5rem 0;
+}
+header img {
+  display: block;
+  width: 75px;
+  margin: 0 auto;
+}
+h1 {
+  color: hsl(0, 0%, 59%);
+  font-weight: 200;
+  text-align: center;
+  font-size: 2.2rem;
+}
+h1 span {
+  color: hsl(209, 33%, 12%);
+  font-weight: 700;
+}
+h2 {
+  color: hsl(209, 33%, 12%);
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+form {
+  position: relative;
+}
+form input {
+  font-size: 0.8rem;
+  border: 1px solid hsl(223, 100%, 88%);
+  padding: 0.7rem 1.5rem;
+  border-radius: 1.2rem;
+  font-weight: 300;
+  color: hsl(209, 33%, 12%);
+}
+input:focus {
+  outline: none;
+  border: 1px solid hsl(223, 87%, 63%);
+}
+::-webkit-input-placeholder {
+  color: hsl(223, 100%, 88%);
+  opacity: 70%;
+  font-weight: 200;
+}
+:-ms-input-placeholder {
+  color: hsl(223, 100%, 88%);
+  font-weight: 200;
+  opacity: 70%; 
+}
+::placeholder {
+  color: hsl(223, 100%, 88%); 
+  font-weight: 200;
+  opacity: 70%;
+}
+#alert {
+  position: absolute;
+  color: hsl(354, 100%, 66%);
+  font-size: 0.7rem;
+  font-style: italic;
+  font-family: 'Libre-Franklin', sans-serif;
+  font-weight: 200;
+}
+form button {
+  font-size: 0.8rem;
+  padding: 0.7rem 2rem;
+  border-radius: 1.2rem;
+  font-weight: 400;
+  color: white;
+  border: 1px solid hsl(223, 87%, 63%);
+  background: hsl(223, 87%, 63%);
+  font-family: 'Libre-Franklin', sans-serif;
+  box-shadow: 0 3px 10px hsl(223, 100%, 88%);
+  cursor: pointer;
+}
+form button:hover {
+  opacity: 70%;
+}
+#illustration {
+  margin: 5rem 0;
+}
+#illustration img {
+  width: 100%;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social div {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.social div:hover {
+  cursor: pointer;
+  background: hsl(223, 87%, 63%);
+}
+.social div:hover i {
+  color: white;
+} 
+i {
+  color: hsl(223, 87%, 63%);
+  font-size: 12px;
+}
+footer p {
+  text-align: center;
+  font-size: 12px;
+  color:hsl(0, 0%, 59%);
+  margin: 1rem 0;
+}
+
+@media only screen and (min-width:600px) {
+  main {
+    font-family: 'Libre-Franklin', sans-serif;    
+    width: max(600px, 50%);
+    margin: 0 auto;
+  }
+  form {
+    display: flex;
+    justify-content: space-between;
+  }
+  form input {
+    width: 70%;
+  }
+  form button {
+    width: 25%;
+  }
+  #alert {
+    display: none;
+    bottom: -20px;
+    left: 1.5rem;
+  }
+}
+
+
+@media only screen and (max-width:600px) {
+  main {
+    font-family: 'Libre-Franklin', sans-serif;    
+    width: 95%;
+    min-width: 275px;
+    margin: 0 auto;
+  }
+  form {
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  form input, form button {
+    display: block;
+    width: 100%;
+  }
+  form button {
+    margin: 1rem auto;
+  }
+  #alert {
+    display: none;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 0.8rem;
+  }
+  #illustration {
+    margin: 2rem 0 3rem 0;
+  }
+}
